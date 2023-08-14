@@ -1,4 +1,6 @@
 import React from 'react'
+import { PRODUCTS } from '../../Products'
+import Product from './Product'
 import './Shop.css'
 
 function Shop() {
@@ -8,7 +10,7 @@ function Shop() {
             <h1>Aziken's Shop</h1>
         </div>
         <div className="products">
-            
+            {PRODUCTS.map((product) => <Product data={product}/>)}
         </div>
     </div>
   )
