@@ -10,7 +10,7 @@ function Shop() {
             <h1>Aziken's Shop</h1>
         </div>
         <div className="products">
-            {PRODUCTS.map((product) => <Product data={product}/>)}
+            {PRODUCTS.map((product) => <Product data={product} key={Math.random()}/>)}
         </div>
     </div>
   )
